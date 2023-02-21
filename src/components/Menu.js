@@ -14,7 +14,7 @@ import {
   NavbarText,
 } from 'reactstrap';
 export default function Menu({ args }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggle = () => setIsOpen(!isOpen);
   const menus = [
@@ -48,7 +48,9 @@ export default function Menu({ args }) {
               );
             })}
           </Nav>
-          <NavbarText>Sign Up</NavbarText>
+          <NavbarText>
+            <a href="./register">Sign Up</a>
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>
