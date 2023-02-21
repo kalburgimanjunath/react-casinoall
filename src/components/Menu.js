@@ -14,7 +14,7 @@ import {
   NavbarText,
 } from 'reactstrap';
 export default function Menu({ args }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   const menus = [
